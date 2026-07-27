@@ -1,0 +1,303 @@
+<html>
+<head>
+	<title>THE ONE</title>
+	<link rel="icon" href="C:\Users\ADMIN\Desktop\Res\img\logo.png">
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+	<!--nav bar--->
+	<!-- Header-->
+	<section>
+		<header class="bg-[360000] text-white sticky top-0 z-50 shadow-sm">
+				<input type="checkbox" id="btn" class="hidden peer">
+				<div class="w-full mx-auto flex items-center justify-between px-4 sm:px-6 py-2">
+					<div class="hover:green-300">		
+					<a href="index.html" >
+						<img src="img/logo.png" alt="Crispy Crown Logo" class="h-12 sm:h-16 w-auto rounded-4xl">
+					</a>
+					</div>
+
+					<nav class="hidden md:flex gap-8 font-medium">
+						<a href="index.html" class="hover:text-[#F4B33C]">HOME</a>
+						<a href="about.html" class="hover:text-[#F4B33C]">ABOUT</a>
+						<a href="menu_1.html" class="border-b-2 border-[#F4B33C]">MENU</a>
+						<a href="gallery.html" class="hover:text-[#F4B33C]">GALLERY</a>
+						<a href="contact.html" class="hover:text-[#F4B33C]">CONTACT</a>
+					</nav>
+
+					<label for="btn" class="md:hidden flex flex-col space-y-1 cursor-pointer">
+						<span class="block w-6 h-0.5 bg-white"></span>
+						<span class="block w-6 h-0.5 bg-white"></span>
+						<span class="block w-6 h-0.5 bg-white"></span>
+					</label>
+
+					<a href="booking.html" class="hidden md:block bg-[#F4B33C] text-[#2B1B12] font-semibold px-4 py-2 rounded-full text-sm">
+						BOOKING
+					</a>
+				</div>
+
+				<div class="hidden peer-checked:block text:lx md:hidden bg-yellow-500 px-6 pb-4">
+					<ul class="flex flex-col space-y-3 text-black font-medium">
+						<li><a href="index.html" class="block font-bold hover:text-red-600">Home</a></li>
+						<li><a href="menu_1.html" class="block font-bold hover:text-red-600" >Menu</a></li>
+						<li><a href="booking.html" class="block font-bold hover:text-red-600" >Booking</a></li>
+						<li><a href="contact.html"class="block font-bold hover:text-red-600" >Contact</a></li>
+					</ul>
+				</div>
+
+		</header>
+	</section>
+	<!--image on menu--->
+	<section class="relative h-[280px] sm:h-[340px] md:h-[420px] w-full overflow-hidden">
+
+		<!-- Background Image -->
+		<img
+			src="img/dinner.png"
+			alt="About"
+			class="absolute inset-0 w-full h-full object-cover">
+
+		<!-- Dark Overlay -->
+		<div class="absolute inset-0 bg-black/60"></div>
+
+		<!-- Content -->
+		<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+
+			<h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">Our Menu</h1>
+		</div>
+	</section>
+	
+	
+	<section class="bg-[#4A1916] py-8 sm:py-12 px-4 sm:px-6 md:px-10 font-serif">
+
+		<!-- Category Tabs -->
+		<div id="menuTabs" class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+			<button data-category="breakfast" class="menu-tab-btn px-5 sm:px-6 py-2.5 sm:py-3 rounded-md text-xs sm:text-sm tracking-widest uppercase font-sans transition-colors cursor-pointer">Breakfast</button>
+			<button data-category="lunch" class="menu-tab-btn px-5 sm:px-6 py-2.5 sm:py-3 rounded-md text-xs sm:text-sm tracking-widest uppercase font-sans transition-colors cursor-pointer">Lunch</button>
+			<button data-category="dinner" class="menu-tab-btn px-5 sm:px-6 py-2.5 sm:py-3 rounded-md text-xs sm:text-sm tracking-widest uppercase font-sans transition-colors cursor-pointer">Dinner</button>
+			<button data-category="drinks" class="menu-tab-btn px-5 sm:px-6 py-2.5 sm:py-3 rounded-md text-xs sm:text-sm tracking-widest uppercase font-sans transition-colors cursor-pointer">Drinks</button>
+			<button data-category="desserts" class="menu-tab-btn px-5 sm:px-6 py-2.5 sm:py-3 rounded-md text-xs sm:text-sm tracking-widest uppercase font-sans transition-colors cursor-pointer">Desserts</button>
+		</div>
+
+		<!-- Menu List -->
+		<div id="menuList" class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5"></div>
+
+		<div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6"></div>
+		<br>
+		<p class="text-white font-sans text-center text-base sm:text-lg md:text-xl lg:text-2xl">
+			<i>"All prices inclusive of taxes · Subject to availability"</i>
+		</p>
+
+	</section>
+
+	<script>
+		const menuData = {
+			breakfast: [
+				{ name: "Chicken Sandwich", price: 180 },
+				{ name: "Chicken Omelette", price: 160 },
+				{ name: "Chicken Sausage", price: 220 },
+				{ name: "Masala Omelette", price: 120 },
+				{ name: "Chicken Roll", price: 190 },
+				{ name: "Grilled Toast", price: 140 },
+				{ name: "Tea", price: 50 },
+				{ name: "Coffee", price: 80 }
+			],
+			lunch: [
+				{ name: "Chicken Biryani", price: 280 },
+				{ name: "Mutton Biryani", price: 350 },
+				{ name: "Fish Meals", price: 320 },
+				{ name: "Chicken Fried Rice", price: 240 },
+				{ name: "Chicken Noodles", price: 220 },
+				{ name: "Butter Chicken", price: 300 },
+				{ name: "Chicken Curry", price: 260 },
+				{ name: "Grilled Chicken", price: 420 }
+			],
+			dinner: [
+				{ name: "Chicken Tandoori", price: 480 },
+				{ name: "BBQ Chicken", price: 520 },
+				{ name: "Mutton Curry", price: 360 },
+				{ name: "Chicken Steak", price: 450 },
+				{ name: "Seafood Platter", price: 700 },
+				{ name: "Pepper Chicken", price: 340 },
+				{ name: "Garlic Chicken", price: 330 },
+				{ name: "Mixed Grill", price: 650 }
+			],
+			drinks: [
+				{ name: "Fresh Lime", price: 90 },
+				{ name: "Orange Juice", price: 120 },
+				{ name: "Mango Juice", price: 140 },
+				{ name: "Watermelon Juice", price: 140 },
+				{ name: "Cold Coffee", price: 180 },
+				{ name: "Chocolate Shake", price: 220 },
+				{ name: "Vanilla Milkshake", price: 200 },
+				{ name: "Mojito", price: 190 },
+				{ name: "Blue Lagoon", price: 220 },
+				{ name: "Mint Cooler", price: 160 }
+			],
+			desserts: [
+				{ name: "Chocolate Brownie", price: 180 },
+				{ name: "Ice Cream", price: 150 },
+				{ name: "Chocolate Lava Cake", price: 220 },
+				{ name: "Fruit Salad", price: 170 },
+				{ name: "Cheesecake", price: 260 }
+			]
+		};
+
+		const tabButtons = document.querySelectorAll(".menu-tab-btn");
+		const menuList = document.getElementById("menuList");
+
+		function setActiveTab(category) {
+			tabButtons.forEach(btn => {
+				if (btn.dataset.category === category) {
+					btn.classList.add("bg-red-600", "text-white");
+					btn.classList.remove("bg-red-950", "text-yellow-500/70", "border", "border-yellow-500/30");
+				} else {
+					btn.classList.remove("bg-red-600", "text-white");
+					btn.classList.add("bg-red-950", "text-yellow-500/70", "border", "border-yellow-500/30");
+				}
+			});
+		}
+
+		function renderMenu(category) {
+			const items = menuData[category] || [];
+			menuList.innerHTML = items.map(item => `
+				<div class="flex items-center justify-between gap-4 bg-red-950/40 border border-yellow-500/20 rounded-lg px-5 sm:px-6 py-4 sm:py-5 hover:border-yellow-500/60 transition-colors">
+					<div class="flex items-center gap-3 min-w-0">
+						<span class="w-2 h-2 rounded-full bg-yellow-500 shrink-0"></span>
+						<span class="text-white font-bold text-base sm:text-lg truncate">${item.name}</span>
+					</div>
+					<span class="text-red-500 font-serif text-lg sm:text-xl whitespace-nowrap">₹${item.price}</span>
+				</div>
+			`).join("");
+		}
+
+		function showCategory(category) {
+			setActiveTab(category);
+			renderMenu(category);
+		}
+
+		tabButtons.forEach(btn => {
+			btn.addEventListener("click", () => showCategory(btn.dataset.category));
+		});
+
+		showCategory("breakfast");
+	</script>
+
+		<section class="bg-[#361C1C] py-10 sm:py-16 px-4 sm:px-6 md:px-10">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-10">
+
+            <!-- Logo -->
+            <div>
+                <div class="flex items-center gap-3">
+                    <img src="img/logo png.png" alt="Logo"
+                        class="h-16 w-16">
+
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-yellow-500">
+                            THE ONE
+                        </h2>
+                        <p class="text-yellow-400 uppercase tracking-widest">
+                            Restaurant
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-white font-serif text-base sm:text-lg mt-6 leading-8">
+                    Fresh Ingredients · Premium Taste · Excellent Service
+                </p>
+
+                <div class="flex gap-4 mt-6">
+                    <a href="https://www.instagram.com/two_stroke_lover_144_?utm_source=qr&igsh=eWNvc2hseTEzbTI%3D">
+                        <img src="img/social media png/instagram.png"
+							alt="instagram"
+                            class="h-10 w-10 rounded-full p-1 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="https://x.com/Dinesh144114402">
+                        <img src="img/social media png/twitter (1).png"
+							alt="x(twiter)"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/social media png/whatsapp.png"
+							alt="whatsapp"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/social media png/facebook (2).png"
+							alt="facebook"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Quick Links
+                </h3>
+
+                <div class="space-y-3">
+                    <a href="index.html" class="block text-white hover:text-yellow-500">Home</a>
+                    <a href="about.html" class="block text-white hover:text-yellow-500">About</a>
+                    <a href="#" class="block text-white hover:text-yellow-500">Menu</a>
+                    <a href="gallery.html" class="block text-white hover:text-yellow-500">Gallery</a>
+                    <a href="contact.html" class="block text-white hover:text-yellow-500">Contact</a>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Opening Hours
+                </h3>
+                <p class="text-white mb-4">Monday – Sunday</p>
+                <div class="space-y-3 text-white">
+                    <p>Breakfast: 7:00 AM – 11:00 AM</p>
+                    <p>Lunch: 12:00 PM – 4:00 PM</p>
+                    <p>Dinner: 6:30 PM – 11:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Contact
+                </h3>
+                <div class="space-y-4 text-white">
+                    <p>
+                        123 Food Street<br>
+                        Chennai, Tamil Nadu<br>
+                        India
+                    </p>
+                    <p>+91 90438 44753</p>
+
+                    <p>dineshit144@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-gray-300 text-center md:text-left">
+                    © 2026 THE ONE Restaurant. All Rights Reserved.
+                </p>
+
+                <p class="text-yellow-500 uppercase tracking-widest text-center md:text-right">
+                    Fresh Flavors · Premium Taste · Every Meal Matters
+                </p>
+            </div>
+        </div>
+    </div>
+	</section>
+		
+</body>
+</html>

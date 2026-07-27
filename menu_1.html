@@ -1,0 +1,474 @@
+<html>
+<head>
+	<title>THE ONE</title>
+	<link rel="icon" href="C:\Users\ADMIN\Desktop\Res\img\logo png.png">
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+	<!--nav bar--->
+	<!-- Header-->
+	<section>
+		<header class="bg-[360000] text-white sticky top-0 z-50 shadow-sm">
+				<input type="checkbox" id="btn" class="hidden peer">
+				<div class="w-full mx-auto flex items-center justify-between px-4 sm:px-6 py-2">
+					<div class="hover:green-300">		
+					<a href="file:///C:/Users/ADMIN/Desktop/Res/index.html" >
+						<img src="C:\Users\ADMIN\Desktop\Res\img\logo.png" alt="Crispy Crown Logo" class="h-12 sm:h-16 w-auto rounded-4xl">
+					</a>
+					</div>
+
+					<nav class="hidden md:flex gap-8 font-medium">
+						<a href="file:///C:/Users/ADMIN/Desktop/Res/index.html" class="hover:text-[#F4B33C]">HOME</a>
+						<a href="file:///C:/Users/ADMIN/Desktop/Res/about.html" class="hover:text-[#F4B33C]">ABOUT</a>
+						<a href="file:///C:/Users/ADMIN/Desktop/Res/menu_1.html" class="border-b-2 border-[#F4B33C]">MENU</a>
+						<a href="file:///C:/Users/ADMIN/Desktop/Res/gallery.html" class="hover:text-[#F4B33C]">GALLERY</a>
+						<a href="file:///C:/Users/ADMIN/Desktop/Res/contact.html" class="hover:text-[#F4B33C]">CONTACT</a>
+					</nav>
+
+					<label for="btn" class="md:hidden flex flex-col space-y-1 cursor-pointer">
+						<span class="block w-6 h-0.5 bg-white"></span>
+						<span class="block w-6 h-0.5 bg-white"></span>
+						<span class="block w-6 h-0.5 bg-white"></span>
+					</label>
+
+					<a href="file:///C:/Users/ADMIN/Desktop/Res/booking.html" class="hidden md:block bg-[#F4B33C] text-[#2B1B12] font-semibold px-4 py-2 rounded-full text-sm">
+						BOOKING
+					</a>
+				</div>
+
+				<div class="hidden peer-checked:block text:lx md:hidden bg-yellow-500 px-6 pb-4">
+					<ul class="flex flex-col space-y-3 text-black font-medium">
+						<li><a href="file:///C:/Users/ADMIN/Desktop/Res/index.html" class="block font-bold hover:text-red-600">Home</a></li>
+						<li><a href="file:///C:/Users/ADMIN/Desktop/Res/menu_1.html" class="block font-bold hover:text-red-600" >Menu</a></li>
+						<li><a href="file:///C:/Users/ADMIN/Desktop/Res/booking.html" class="block font-bold hover:text-red-600" >Booking</a></li>
+						<li><a href="file:///C:/Users/ADMIN/Desktop/Res/contact.html"class="block font-bold hover:text-red-600" >Contact</a></li>
+					</ul>
+				</div>
+
+		</header>
+	</section>
+	<!--image on menu--->
+	<section class="relative h-[280px] sm:h-[340px] md:h-[420px] w-full overflow-hidden">
+
+		<!-- Background Image -->
+		<img
+			src="C:\Users\ADMIN\Desktop\Res\img\dinner.png"
+			alt="About"
+			class="absolute inset-0 w-full h-full object-cover">
+
+		<!-- Dark Overlay -->
+		<div class="absolute inset-0 bg-black/60"></div>
+
+		<!-- Content -->
+		<div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+
+			<h1 class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">Our Menu</h1>
+		</div>
+	</section>
+	
+	
+	<section class="bg-[#4A1916] py-8 sm:py-12 px-4 sm:px-10 md:px-20 font-serif">
+		<!--Breakfast--->
+		<h1 class="text-white text-2xl sm:text-3xl md:text-4xl text-center p-4">BREAKFAST</h1>
+	<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 font-serif items-center justify-center text-center">
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken sandwich.png" alt="Chicken Omelette" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Omelette</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹180</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken omelette.png" alt="chicken sandwich" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Omelette</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹160</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken sausage.png" alt="Chicken Sausage" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Sausage</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹220</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\masala omelette.png" alt="Masala Omelette" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Masala Omelette</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹120</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken roll.png" alt="Chicken Roll" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Roll</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹190</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Grilled Toast.png" alt="Grilled Toast" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Grilled Toast</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹140</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\tea.png" alt="Grilled Toast" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Tea</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹50</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\coffee.png" alt="Coffee" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Coffee</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹50</h1>
+		</div>	
+	</div>
+	 <div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6"></div>
+			<!--LUNCH--->
+		<h1 class="text-white text-2xl sm:text-3xl md:text-4xl text-center p-2 py-10 sm:py-16">LUNCH</h1>
+	<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 font-serif items-center justify-center text-center">
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken briyani.png" alt="Chicken Biryani" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Biryani</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹280</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\mutton briyan.png" alt="Mutton Biryani" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mutton Biryani</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹350</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\fish meals.png" alt="Fish Meals" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Fish Meals</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹320</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken frid rice.png" alt="	Chicken Fried Rice" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Fried Rice</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹240</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken noodles.png" alt="Chicken Noodles" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Noodles</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹220</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\butter chicken.png" alt="Butter Chicken" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Butter Chicken</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹300</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken curry.png" alt="Chicken Curry" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Curry</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹260</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\grilled chicken.png" alt="Grilled Chicken" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Grilled Chicken</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹420</h1>
+		</div>	
+	</div>
+	<div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6"></div>
+			<!--DINNER--->
+		<h1 class="text-white text-2xl sm:text-3xl md:text-4xl text-center p-2 py-10 sm:py-16">DINNER</h1>
+	<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 font-serif items-center justify-center text-center">
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken tandoori.png" alt="Chicken Tandoori" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Tandoori</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹480</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\BBQ chicken.png" alt="BBQ Chicken" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">BBQ Chicken</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹520</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\mutton curry.png" alt="Mutton Curry" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mutton Curry</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹360</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\chicken steak.png" alt="Chicken Steak" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chicken Steak</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹450</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Seafood Platter.png" alt="Seafood Platter" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Seafood Platter</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹700</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Pepper Chicken.png" alt="Pepper Chicken" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Pepper Chicken</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹340</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Garlic Chicken.png" alt="Garlic Chicken" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Garlic Chicken</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹330</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Mixed Grill.png" alt="Grilled Chicken" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mixed Grill</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹650</h1>
+		</div>	
+	</div>
+
+			<!--DRINKS--->
+		<h1 class="text-white text-2xl sm:text-3xl md:text-4xl text-center p-2 py-10 sm:py-16">DRINKS</h1>
+	<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 font-serif items-center justify-center text-center">
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Fresh Lime.png" alt="Fresh Lime" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Fresh Lime</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹90</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Orange Juice.png" alt="Orange Juice" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Orange Juice</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹120</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Mango Juice.png" alt="Mango Juice" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mango Juice</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹140</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Watermelon Juice.png" alt="Watermelon Juice" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Watermelon Juice</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹140</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Cold Coffee.png" alt="Cold Coffee" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Cold Coffee</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹180</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Chocolate Shake.png" alt="Chocolate Shake" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chocolate Shake</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹220</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Vanilla Milkshake.png" alt="Vanilla Milkshake" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Vanilla Milkshake</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹200</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Mojito.png" alt="Mojito" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mojito</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹190</h1>
+		</div>	
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Blue Lagoon.png" alt="Blue Lagoon" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Blue Lagoone</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹220</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Mint Cooler.png" alt="Mint Cooler" 
+		class="rounded-3xl h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] w-full object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Mint Cooler</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹160</h1>
+		</div>	
+	</div>
+	<div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6"></div>
+			<!--Desserts--->
+		<h1 class="text-white text-2xl sm:text-3xl md:text-4xl text-center p-2 py-10 sm:py-16">DESSERTS</h1>
+	<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 font-serif items-center justify-center text-center">
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Chocolate Brownie.png" alt="Chocolate Brownie" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chocolate Brownie</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹180</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Ice Cream.png" alt="Ice Cream" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Ice Cream</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹150</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Chocolate Lava Cake.png" alt="Chocolate Lava Cake" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Chocolate Lava Cake</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹220</h1>
+		</div>
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Fruit Salad.png" alt="Fruit Salad" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Fruit Salad</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹170</h1>
+		</div>
+		
+		<div class="border-2 p-2 border-yellow-500 bg-red-950 rounded-2xl hover:border-red-500 shadow-2xl">
+		<img src="C:\Users\ADMIN\Desktop\Res\img\menu\Cheesecake.png" alt="Cheesecake" 
+		class="rounded-3xl w-full h-[200px] sm:h-[220px] md:h-[240px] lg:h-[260px] object-cover">
+		<h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl p-2">Cheesecake</h1>
+		<h1 class="text-red-500 text-xl sm:text-xl md:text-2xl lg:text-3xl">₹260</h1>
+		</div>
+	</div>
+	<div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6"></div>
+	<br>
+		<p class="text-white font-sans text-center text-base sm:text-lg md:text-xl lg:text-2xl">
+		<i>"All prices inclusive of taxes · Subject to availability"</i>
+	</p>
+	
+
+   
+</section>
+		<section class="bg-[#361C1C] py-10 sm:py-16 px-4 sm:px-6 md:px-10">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-10">
+
+            <!-- Logo -->
+            <div>
+                <div class="flex items-center gap-3">
+                    <img src="img/logo png.png" alt="Logo"
+                        class="h-16 w-16">
+
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-yellow-500">
+                            THE ONE
+                        </h2>
+                        <p class="text-yellow-400 uppercase tracking-widest">
+                            Restaurant
+                        </p>
+                    </div>
+                </div>
+
+                <p class="text-white font-serif text-base sm:text-lg mt-6 leading-8">
+                    Fresh Ingredients · Premium Taste · Excellent Service
+                </p>
+
+                <div class="flex gap-4 mt-6">
+                    <a href="https://www.instagram.com/two_stroke_lover_144_?utm_source=qr&igsh=eWNvc2hseTEzbTI%3D">
+                        <img src="C:\Users\ADMIN\Desktop\Res\img\social media png\instagram.png"
+							alt="instagram"
+                            class="h-10 w-10 rounded-full p-1 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="https://x.com/Dinesh144114402">
+                        <img src="img/social media png/twitter (1).png"
+							alt="x(twiter)"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/social media png/whatsapp.png"
+							alt="whatsapp"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+
+                    <a href="#">
+                        <img src="img/social media png/facebook (2).png"
+							alt="facebook"
+                            class="h-10 w-10 rounded-full p-2 bg-[#361C1C] hover:bg-red-500">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Quick Links
+                </h3>
+
+                <div class="space-y-3">
+                    <a href="file:///C:/Users/ADMIN/Desktop/Res/index.html" class="block text-white hover:text-yellow-500">Home</a>
+                    <a href="file:///C:/Users/ADMIN/Desktop/Res/about.html" class="block text-white hover:text-yellow-500">About</a>
+                    <a href="#" class="block text-white hover:text-yellow-500">Menu</a>
+                    <a href="file:///C:/Users/ADMIN/Desktop/Res/gallery.html" class="block text-white hover:text-yellow-500">Gallery</a>
+                    <a href="file:///C:/Users/ADMIN/Desktop/Res/contact.html" class="block text-white hover:text-yellow-500">Contact</a>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Opening Hours
+                </h3>
+                <p class="text-white mb-4">Monday – Sunday</p>
+                <div class="space-y-3 text-white">
+                    <p>Breakfast: 7:00 AM – 11:00 AM</p>
+                    <p>Lunch: 12:00 PM – 4:00 PM</p>
+                    <p>Dinner: 6:30 PM – 11:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-yellow-500 text-xl sm:text-2xl font-serif font-bold mb-6">
+                    Contact
+                </h3>
+                <div class="space-y-4 text-white">
+                    <p>
+                        123 Food Street<br>
+                        Chennai, Tamil Nadu<br>
+                        India
+                    </p>
+                    <p>+91 90438 44753</p>
+
+                    <p>dineshit144@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-[#6d352f] mt-10 sm:mt-12 pt-6">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-gray-300 text-center md:text-left">
+                    © 2026 THE ONE Restaurant. All Rights Reserved.
+                </p>
+
+                <p class="text-yellow-500 uppercase tracking-widest text-center md:text-right">
+                    Fresh Flavors · Premium Taste · Every Meal Matters
+                </p>
+            </div>
+        </div>
+    </div>
+	</section>
+		
+</body>
+</html>
